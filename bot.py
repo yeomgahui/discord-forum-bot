@@ -20,7 +20,8 @@ def send_discord_webhook():
                 "description": "이곳에 내용을 추가하세요.",
                 "color": 5814783
             }
-        ]
+        ],
+        "thread_name": "일일 업데이트"
     }
 
     response = requests.post(WEBHOOK_URL, json=data)
